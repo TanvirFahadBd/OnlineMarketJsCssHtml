@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="./Style.css">
+<title>LUXÉ — Premium Fashion Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">LUXÉ</div>
+  <div class="loader-tagline">Premium Fashion & Lifestyle</div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar-fill"></div>
+  </div>
+  <div class="loader-count" id="loader-count">0</div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce-bar">
+    <div class="announce-track" id="announce-track">
+      <span>✦ Free Shipping on Orders Over $150 &nbsp;</span>
+      <span>✦ New <strong>Spring Collection</strong> — Now Live &nbsp;</span>
+      <span>✦ Use Code <strong>LUXE20</strong> for 20% Off Your First Order &nbsp;</span>
+      <span>✦ Free Returns Within 30 Days &nbsp;</span>
+      <span>✦ Free Shipping on Orders Over $150 &nbsp;</span>
+      <span>✦ New <strong>Spring Collection</strong> — Now Live &nbsp;</span>
+      <span>✦ Use Code <strong>LUXE20</strong> for 20% Off Your First Order &nbsp;</span>
+      <span>✦ Free Returns Within 30 Days &nbsp;</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">LUXÉ</a>
+    <ul class="nav-links">
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#testimonials">Journal</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="nav-icon">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="nav-icon cart-badge">
+        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="close-btn" id="close-nav">✕</button>
+    <a href="#categories" class="mobile-link">Collections</a>
+    <a href="#products" class="mobile-link">Shop</a>
+    <a href="#featured" class="mobile-link">Featured</a>
+    <a href="#testimonials" class="mobile-link">Journal</a>
+    <a href="#newsletter" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-left">
+      <div class="hero-eyebrow">SS 2025 Collection</div>
+      <h1 class="hero-title">
+        Wear the<br>
+        <em>Art of Living</em>
+        Beautifully
+      </h1>
+      <p class="hero-subtitle">
+        Curated luxury fashion for those who understand that true style is a language — 
+        spoken in fabric, tailored in silence, and worn with intention.
+      </p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn-primary">
+          Shop Now
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#categories" class="btn-outline">
+          Explore Collections
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num">12K+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num">340+</span>
+          <span class="stat-label">Luxury Pieces</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num">28</span>
+          <span class="stat-label">Countries</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-main">
+        <div class="hero-img-placeholder">
+          <img src="./fresh-styles-for-fall-new-arrivals-from-apparel-group-brands-img-2.webp" alt="">
+        </div>
+        <div class="hero-label">
+          <div class="hero-label-dot"></div>
+          <div class="hero-label-text">
+            <p>Now Available</p>
+            <strong>Spring / Summer 2025</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="section-header reveal">
+      <div>
+        <div class="section-label">Our World</div>
+        <h2 class="section-title">Shop by <em>Category</em></h2>
+      </div>
+      <a href="#" class="section-link">
+        View All
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card cat-c1 reveal">
+        <div class="cat-card-inner">
+          <div class="cat-bg"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-icon">
+            <img src="./women's.avif" alt="">
+          </div>
+          <div class="cat-content">
+            <div class="cat-tag">Featured</div>
+            <h3 class="cat-name">Women's<br>Collection</h3>
+            <p class="cat-count">148 Pieces</p>
+          </div>
+          <div class="cat-arrow"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </div>
+      <div class="cat-card cat-c2 reveal reveal-delay-1">
+        <div class="cat-card-inner">
+          <div class="cat-bg"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-icon">
+            <img src="./men's.avif" alt="">
+          </div>
+          <div class="cat-content">
+            <div class="cat-tag">New</div>
+            <h3 class="cat-name">Men's Wear</h3>
+            <p class="cat-count">92 Pieces</p>
+          </div>
+          <div class="cat-arrow"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </div>
+      <div class="cat-card cat-c3 reveal reveal-delay-2">
+        <div class="cat-card-inner">
+          <div class="cat-bg"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-icon">
+            <img src="./treanding.avif" alt="">
+          </div>
+          <div class="cat-content">
+            <div class="cat-tag">Trending</div>
+            <h3 class="cat-name">Accessories</h3>
+            <p class="cat-count">64 Pieces</p>
+          </div>
+          <div class="cat-arrow"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </div>
+      <div class="cat-card cat-c4 reveal reveal-delay-1">
+        <div class="cat-card-inner">
+          <div class="cat-bg"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-icon">
+            <img src="./juta.avif" alt="">
+          </div>
+          <div class="cat-content">
+            <div class="cat-tag">Limited</div>
+            <h3 class="cat-name">Shoes</h3>
+            <p class="cat-count">38 Pieces</p>
+          </div>
+          <div class="cat-arrow"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </div>
+      <div class="cat-card cat-c5 reveal reveal-delay-2">
+        <div class="cat-card-inner">
+          <div class="cat-bg"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-icon">
+            <img src="./Bag.avif" alt="">
+          </div>
+          <div class="cat-content">
+            <div class="cat-tag">Exclusive</div>
+            <h3 class="cat-name">Luxury Bags</h3>
+            <p class="cat-count">27 Pieces</p>
+          </div>
+          <div class="cat-arrow"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span class="marquee-item">New Arrivals <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Premium Quality <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Sustainable Fashion <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Free Worldwide Shipping <span class="marquee-dot"></span></span>
+      <span class="marquee-item">SS 2025 Collection <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Exclusive Designs <span class="marquee-dot"></span></span>
+      <span class="marquee-item">New Arrivals <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Premium Quality <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Sustainable Fashion <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Free Worldwide Shipping <span class="marquee-dot"></span></span>
+      <span class="marquee-item">SS 2025 Collection <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Exclusive Designs <span class="marquee-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="section-header reveal">
+      <div>
+        <div class="section-label">Curated Selection</div>
+        <h2 class="section-title">New <em>Arrivals</em></h2>
+      </div>
+      <a href="#" class="section-link">
+        View All
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="products-filter reveal">
+      <button class="filter-btn active" onclick="filterProducts(this,'all')">All</button>
+      <button class="filter-btn" onclick="filterProducts(this,'women')">Women</button>
+      <button class="filter-btn" onclick="filterProducts(this,'men')">Men</button>
+      <button class="filter-btn" onclick="filterProducts(this,'accessories')">Accessories</button>
+      <button class="filter-btn" onclick="filterProducts(this,'sale')">Sale</button>
+    </div>
+    <div class="products-grid" id="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#1a1208,#2a1c0c);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-new">New</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Women / Dresses</div>
+          <h3 class="product-name">Silk Evening Gown</h3>
+          <div class="product-price-row">
+            <span class="product-price">$480</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#2c1a0a;"></div>
+            <div class="color-dot" style="background:#0a0a1a;"></div>
+            <div class="color-dot" style="background:#1a0808;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#0d1a14,#102018);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-hot">Hot</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Men / Outerwear</div>
+          <h3 class="product-name">Cashmere Overcoat</h3>
+          <div class="product-price-row">
+            <span class="product-price">$720</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#1a1a14;"></div>
+            <div class="color-dot" style="background:#0a0808;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#1a0d0d,#261010);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-sale">−30%</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Accessories / Bags</div>
+          <h3 class="product-name">Leather Tote Bag</h3>
+          <div class="product-price-row">
+            <span class="product-price">$315</span>
+            <span class="product-price-old">$450</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#3d1e0a;"></div>
+            <div class="color-dot" style="background:#0a0808;"></div>
+            <div class="color-dot" style="background:#1a1408;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#0d0f1a,#10122e);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-new">New</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Women / Tops</div>
+          <h3 class="product-name">Silk Blouse — Midnight</h3>
+          <div class="product-price-row">
+            <span class="product-price">$195</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#0a0a1a;"></div>
+            <div class="color-dot" style="background:#1a1208;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#1a150d,#241c0d);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Men / Shirts</div>
+          <h3 class="product-name">Linen Oxford Shirt</h3>
+          <div class="product-price-row">
+            <span class="product-price">$145</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#f0ece0;border-color:rgba(255,255,255,0.3)"></div>
+            <div class="color-dot" style="background:#1a1208;"></div>
+            <div class="color-dot" style="background:#0d1a14;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#1a0808,#261010);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-sale">−20%</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Women / Skirts</div>
+          <h3 class="product-name">Pleated Maxi Skirt</h3>
+          <div class="product-price-row">
+            <span class="product-price">$196</span>
+            <span class="product-price-old">$245</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#1a0808;"></div>
+            <div class="color-dot" style="background:#1a1a14;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#0a1018,#0d1520);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-hot">Hot</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Accessories / Shoes</div>
+          <h3 class="product-name">Suede Chelsea Boots</h3>
+          <div class="product-price-row">
+            <span class="product-price">$340</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#1a0e08;"></div>
+            <div class="color-dot" style="background:#0a0808;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#0e1a0e,#0f200f);">
+              <div class="product-img-icon">
+                <img src="./Bag.avif" alt="">
+              </div>
+            </div>
+          </div>
+          <span class="product-badge badge-new">New</span>
+          <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="product-actions">
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Add to Cart</button>
+            <button class="action-btn"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Women / Knitwear</div>
+          <h3 class="product-name">Merino Wrap Cardigan</h3>
+          <div class="product-price-row">
+            <span class="product-price">$265</span>
+          </div>
+          <div class="product-colors">
+            <div class="color-dot" style="background:#0e1a0e;"></div>
+            <div class="color-dot" style="background:#1a1208;"></div>
+            <div class="color-dot" style="background:#1a0808;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BANNER -->
+  <section class="featured-banner" id="featured">
+    <div class="featured-visual">
+      <div class="featured-shape">
+        <div class="featured-icon-large">
+
+          <img src="./watch.jpg" alt="">
+
+        </div>
+      </div>
+    </div>
+    <div class="featured-content reveal">
+      <div class="featured-tag">Limited Edition</div>
+      <h2 class="featured-title">
+        The Collector's
+        <em>Signature Piece</em>
+      </h2>
+      <p class="featured-desc">
+        Hand-stitched in Florence by master artisans using century-old techniques. 
+        Only 50 pieces exist in the world. Each one numbered, each one a legacy.
+      </p>
+      <div class="featured-price-block">
+        <div class="featured-price">$1,850</div>
+        <div class="featured-price-note">+ Free White Glove Delivery</div>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:12px;">Offer Ends In</p>
+        <div class="countdown">
+          <div class="countdown-block">
+            <div class="countdown-num" id="cd-h">08</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-block" style="align-self:flex-start;padding-top:8px;font-family:var(--serif);font-size:24px;color:var(--gold)">:</div>
+          <div class="countdown-block">
+            <div class="countdown-num" id="cd-m">34</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-block" style="align-self:flex-start;padding-top:8px;font-family:var(--serif);font-size:24px;color:var(--gold)">:</div>
+          <div class="countdown-block">
+            <div class="countdown-num" id="cd-s">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-primary" style="width:fit-content;margin-top:8px;">
+        Claim Your Piece
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature-item reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="feature-title">Free Global Shipping</div>
+        <div class="feature-desc">Complimentary shipping on all orders over $150 to 28 countries worldwide.</div>
+      </div>
+      <div class="feature-item reveal reveal-delay-1">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="feature-title">Authenticity Guaranteed</div>
+        <div class="feature-desc">Every piece comes with a certificate of authenticity and brand verification.</div>
+      </div>
+      <div class="feature-item reveal reveal-delay-2">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+        </div>
+        <div class="feature-title">30-Day Returns</div>
+        <div class="feature-desc">Hassle-free returns and exchanges within 30 days, no questions asked.</div>
+      </div>
+      <div class="feature-item reveal reveal-delay-3">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="feature-title">Personal Stylist</div>
+        <div class="feature-desc">Dedicated style consultants available 24/7 to curate your perfect look.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header reveal">
+      <div>
+        <div class="section-label">Client Love</div>
+        <h2 class="section-title">What They <em>Say</em></h2>
+      </div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The Silk Evening Gown arrived in the most beautiful packaging I've ever seen. The quality is extraordinary — every seam, every detail speaks of true craftsmanship.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Sophia Andersen</div>
+            <div class="testi-location">Copenhagen, Denmark</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">LUXÉ transformed how I think about fashion. The cashmere overcoat is worth every penny — three winters in and it looks better than the day it arrived.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">J</div>
+          <div>
+            <div class="testi-name">James Whitmore</div>
+            <div class="testi-location">London, United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars">
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The personal stylist service is what sets LUXÉ apart. They helped me build a wardrobe that feels uniquely mine — curated, intentional, and effortlessly elegant.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Amara Osei</div>
+            <div class="testi-location">Accra, Ghana</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-inner reveal">
+      <div class="section-label" style="justify-content:center">Join the Inner Circle</div>
+      <h2 class="newsletter-title">
+        Stay <em>Ahead</em><br>of the Curve
+      </h2>
+      <p class="newsletter-desc">
+        Subscribe for early access to new collections, exclusive offers, and style insights from our editorial team.
+      </p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="Your email address"/>
+        <button class="newsletter-submit">Subscribe</button>
+      </div>
+      <p class="newsletter-note">No spam. Unsubscribe anytime. We respect your privacy.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">LUXÉ</div>
+        <p class="footer-desc">Premium fashion curated for those who understand that true style is timeless, intentional, and deeply personal.</p>
+        <div class="footer-socials">
+          <div class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+          <div class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></div>
+          <div class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          <div class="social-btn"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Shop</div>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Women's Collection</a></li>
+          <li><a href="#">Men's Collection</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partnerships</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Support</div>
+        <ul>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Care Instructions</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 LUXÉ Fashion. All rights reserved.</div>
+      <div class="footer-payments">
+        <span style="font-size:11px;color:rgba(248,246,242,0.2);letter-spacing:0.1em;margin-right:8px;">We Accept</span>
+        <div class="payment-icon">VISA</div>
+        <div class="payment-icon">MC</div>
+        <div class="payment-icon">AMEX</div>
+        <div class="payment-icon">PayPal</div>
+        <div class="payment-icon">Apple Pay</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+</div><!-- #main -->
+
+<script src="./Script.js"></script>
+</body>
+</html>
